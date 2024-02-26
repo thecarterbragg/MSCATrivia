@@ -1,0 +1,217 @@
+/* Set box-sizing to border-box for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Styles for body */
+body {
+    font-family: "Montseratt";
+    font-size: 20px;
+    background-image: url("../images/herboculous.jpeg");
+    background-position: center;
+}
+
+header {
+    color: rgb(220, 238, 245);
+    background-color: #3b9197;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 5px; 
+    left: 160vh;
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.profile-picture img {
+    width: 100%; 
+    left: 60px;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 1%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+/* Styles for close button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for question */
+#question {
+    text-align: center;
+    font-weight: bold;
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#elapsedTime {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 0.4vh;
+    background-color: gray;
+}
+
+#interval {
+    font-size: 25px;
+    color: wheat;
+    background-color: gray;
+}
+
+#score {
+    color: wheat;
+    background-color: gray;
+    font-size: 25px;
+    padding-bottom: 1vh;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#trackScore {
+    font-size: 22px;
+}
+
+#question-div {
+    font-size: 20px;
+}
+
+#question-id {
+    color: rgb(220, 238, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 10vw;
+    border: 1px solid rgb(60, 176, 225);
+    margin-bottom: 5vh;
+    background-color: rgb(40, 199, 183);
+    font-size: 25px;
+}
+
+.containerButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.button {
+    padding: 0.6em 0.8em;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #3b9197;
+    font-size: 1.1em;
+    border: 0;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.button:hover {
+    background-color: #3e99d8;
+}
+
+.button:active {
+    background-color: gray;
+}
+
+.next {
+    display: none;
+}
+
+.end {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* Styles for wrong answer */
+.incorrectAnswer {
+    background-color: rgba(236, 2, 2, 0.794);
+    color: white;
+}
+
+.incorrectAnswer:hover {
+    background-color: rgba(163, 39, 39, 0.794);
+}
+
+.incorrectAnswer:active {
+    background-color: rgb(227, 17, 17);
+}
+
+/* Styles for correct answer */
+.correctAnswer {
+    background-color: rgb(31, 188, 31);
+    color: white;
+}
+
+.correctAnswer:hover {
+    background-color: rgb(31, 115, 31);
+}
+
+.correctAnswer:active {
+    background-color: rgb(36, 134, 36);
+}
+
+/* Styles for contact section */
+#contact-id {
+    color: rgb(220, 238, 245);
+    font-size: 20px;
+    background-color: #3b9197;
+    font-weight: bold;
+}
+
+/* Styles for colophon */
+#colophon {
+    font-size: 20px;
+    color: rgb(220, 238, 245);
+    background-color: #3b9197;
+    padding: 0.3em;
+    font-weight: bold;
+}
